@@ -16,6 +16,8 @@ public class E4Application implements ApplicationConfiguration {
     private final static String E4XMI = "platform:/plugin/at.colpanic.e4raptycho.application/Application.e4xmi";
 
     public void configure(Application application) {
+    	System.out.println("--[E4Application]------------------------------------------------------------------");
+    	
         Map<String, String> properties = new HashMap<String, String>();
         properties.put(WebClient.PAGE_TITLE, "Hello e4 RAP");
         E4ApplicationConfig config = E4ApplicationConfig.create(E4XMI);
